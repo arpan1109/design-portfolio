@@ -124,7 +124,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="md:py-2 bg-[#0a0a0a] text-white">
+      <section id="services" className="md:py-2 bg-[#0a0a0a] text-white">
         <div className="max-w-7xl mx-auto px-6 font-onest">
           {/* --- SECTION 1: THE PROBLEM --- */}
           <div className="mb-24">

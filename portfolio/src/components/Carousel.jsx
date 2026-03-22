@@ -34,11 +34,11 @@ export default function Carousel() {
   };
 
   return (
-    <section className="py-24 md:py-32 bg-[#0a0a0a] text-white">
+    <section  className="py-24 md:py-32 bg-[#0a0a0a] overflow-hidden text-white">
       <div className="max-w-7xl mx-auto px-6 font-onest">
         {/* Simplified Header - Controls are removed from here */}
         <div className="mb-12">
-          <h2 className="text-5xl md:text-6xl font-prata mb-4">
+          <h2 id="work" className="text-5xl md:text-6xl font-prata mb-4">
             Selected Works
           </h2>
           <p className="text-zinc-400 max-w-md">
@@ -48,7 +48,7 @@ export default function Carousel() {
         </div>
 
         {/* --- CAROUSEL VIEWPORT (Relative Container for controls) --- */}
-        <div className="group relative w-full max-w-4xl mx-auto aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl">
+        <div  className="group relative w-full max-w-4xl mx-auto aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-zinc-800 shadow-2xl">
           {/* 1. THE MOVING TRACK */}
           <div
             className="flex w-full h-full transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
@@ -80,8 +80,8 @@ export default function Carousel() {
                 </div>
 
                 {/* Text Overlay (Bottom Left) */}
-                <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none">
-                  <p className="text-zinc-300 text-xs md:text-sm tracking-[0.3em] uppercase mb-3">
+                <div className="absolute bottom-0 left-0 w-full p-2 md:p-12 bg-linear-to-t from-black/90 via-black/40 to-transparent pointer-events-none">
+                  <p className="hidden md:block text-zinc-300 text-xs md:text-sm tracking-[0.3em] uppercase mb-3">
                     {project.category}
                   </p>
                   <h3 className="text-3xl md:text-5xl font-prata">

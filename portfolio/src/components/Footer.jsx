@@ -61,7 +61,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0a0a0a] text-white border-b-2  pb-12 overflow-hidden relative border-t border-zinc-900">
+    <footer  className="bg-[#0a0a0a] text-white border-b-2  pb-12 overflow-hidden relative border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 font-onest relative z-10">
         {/* 1. FAQ SECTION */}
         <div className="mb-32">
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         {/* 2. MASSIVE CALL TO ACTION */}
-        <div className="mb-14">
+        <div id="contact" className="mb-14">
           <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-prata leading-none tracking-tight mb-6">
             Let's create <br />
             <span className="text-white/60 italic">together.</span>
@@ -141,7 +141,7 @@ export default function Footer() {
           <p>Delhi, INDIA.</p>
           <div className="flex gap-6">
             <a
-              href="mailto:yourname@gmail.com"
+              href="mailto:divyanshpal17@gmail.com"
               className="flex items-center gap-2 hover:text-zinc-500 transition-colors group"
             >
               <svg
@@ -155,7 +155,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="YOUR_INSTAGRAM_URL"
+              href="https://www.instagram.com/dev_creates4u/"
               className="flex items-center gap-2 hover:text-zinc-500 transition-colors group"
             >
               <svg
