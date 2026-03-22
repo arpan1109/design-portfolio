@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Bottom Explore Button & Scroll Line */}
       <div className="absolute bottom-1 flex flex-col items-center gap-6">
-        <button className="border border-zinc-600 hover:border-white hover:bg-white hover:text-black transition-all duration-300 px-8 py-3 text-xs tracking-[0.2em] uppercase">
+        <button className="border border-zinc-600 rounded-sm font-onest font-bold hover:border-white hover:bg-white/30  transition-all duration-300 px-8 py-3 text-xs tracking-[0.2em] uppercase">
           Explore Work
         </button>
         

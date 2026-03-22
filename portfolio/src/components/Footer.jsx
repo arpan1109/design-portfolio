@@ -61,7 +61,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0a0a0a] text-white pt-24 pb-12 overflow-hidden relative border-t border-zinc-900">
+    <footer className="bg-[#0a0a0a] text-white border-b-2  pb-12 overflow-hidden relative border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 font-onest relative z-10">
         {/* 1. FAQ SECTION */}
         <div className="mb-32">

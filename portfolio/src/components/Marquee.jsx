@@ -1,57 +1,59 @@
-import React from 'react';
 
-// For now, we will use placeholder colors instead of images.
-// Later, you will map your projects.json data here!
-const dummyProjects = [
-  { id: 1, title: 'Project 1', color: 'bg-zinc-800' },
-  { id: 2, title: 'Project 2', color: 'bg-zinc-700' },
-  { id: 3, title: 'Project 3', color: 'bg-zinc-800' },
-  { id: 4, title: 'Project 4', color: 'bg-zinc-700' },
-  { id: 5, title: 'Project 5', color: 'bg-zinc-800' },
-];
+import React from 'react';
+import projects from '../data/projects.json';
 
 export default function Marquee() {
   return (
-    <section className="py-4 bg-[#0a0a0a] text-white overflow-hidden">
+    <section className="py-16 bg-[#0a0a0a] text-white overflow-hidden border-b border-zinc-900">
       
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4">
-        <h2 className="text-4xl font-prata md:text-5xl  tracking-wide">
-          Recent Works
+      <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4 font-onest">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+          Moving showcase
         </h2>
-        <p className="text-zinc-200 font-onest text-sm md:text-xl max-w-lg">
-          My recent works across different styles and niches.
+        <p className="text-zinc-400 text-sm md:text-base max-w-sm leading-relaxed">
+          A quick look at my work across different styles and niches.
         </p>
       </div>
 
-      {/* The Marquee Container */}
-      <div className="relative flex overflow-hidden group">
+      {/* The Wrapper */}
+      <div className="relative flex overflow-hidden group select-none">
         
-        {/* Track 1 */}
-        <div className="flex animate-[marquee_25s_linear_infinite] group-hover:[animation-play-state:paused] whitespace-nowrap">
-          {dummyProjects.map((project) => (
+        {/* We use [...projects, ...projects] to double the list.
+            This creates a single long line that never 'runs out' of images.
+        */}
+        <div className="flex flex-nowrap gap-8 animate-marquee group-hover:[animation-play-state:paused]">
+          
+          {[...projects, ...projects].map((project, index) => (
             <div 
-              key={`track1-${project.id}`} 
-              className={`w-80 h-48 md:w-md md:h-64 mx-4 rounded-xl flex items-center justify-center ${project.color} transition-transform duration-300 hover:scale-95 cursor-pointer`}
+              key={`${project.id}-${index}`} 
+              /* 'flex-none' is CRITICAL. It stops the browser from squishing the images.
+                 'w-[28rem]' ensures they stay at the thumbnail size you want.
+              */
+              className="flex-none w-72 h-40 md:w-md md:h-64 rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 transition-all duration-500 hover:scale-95 cursor-pointer relative group/item"
             >
-              {/* Replace this text with an <img /> tag later */}
-              <span className="text-zinc-500 font-mono text-sm">{project.title}</span>
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-full object-cover opacity-80 group-hover/item:opacity-100 transition-opacity"
+                loading="lazy"
+              />
+              
+              {/* Title Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity flex items-end p-6">
+                <div className="transform translate-y-4 group-hover/item:translate-y-0 transition-transform duration-300">
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-zinc-400 mb-1 font-onest">
+                    {project.category}
+                  </p>
+                  <span className="text-sm tracking-widest uppercase font-bold font-onest">
+                    {project.title}
+                  </span>
+                </div>
+              </div>
             </div>
           ))}
+          
         </div>
-
-        {/* Track 2 (The Duplicate for seamless looping) */}
-        <div className="flex animate-[marquee_25s_linear_infinite] group-hover:[animation-play-state:paused] whitespace-nowrap absolute top-0 left-full">
-          {dummyProjects.map((project) => (
-            <div 
-              key={`track2-${project.id}`} 
-              className={`w-80 h-48 md:w-md md:h-64 mx-4 rounded-xl flex items-center justify-center ${project.color} transition-transform duration-300 hover:scale-95 cursor-pointer`}
-            >
-              <span className="text-zinc-500 font-mono text-sm">{project.title}</span>
-            </div>
-          ))}
-        </div>
-
       </div>
     </section>
   );

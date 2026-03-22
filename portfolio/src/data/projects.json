@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "Doomsday",
+    "category": "Explainer Thumbnail",
+    "image": "/images/doomsday.webp",
+    "description": "Movie Explainer Thumbnail."
+  },
+  {
+    "id": 2,
+    "title": "Brain",
+    "category": "Motivational",
+    "image": "/images/brain.webp",
+    "description": "Motivational thumbnail"
+  },
+  {
+    "id": 3,
+    "title": "GTA",
+    "category": "Gaming",
+    "image": "/images/gta-fails.webp",
+    "description": "Gaming thumbnail"
+  },
+  {
+    "id": 4,
+    "title": "GTA",
+    "category": "Gaming",
+    "image": "/images/gta-car.webp",
+    "description": "Gaming thumbnail"
+  },
+  {
+    "id": 5,
+    "title": "Money",
+    "category": "Educational",
+    "image": "/images/paisa.webp",
+    "description": "Educational thumbnail"
+  },
+  {
+    "id": 6,
+    "title": "Duotone",
+    "category": "Documentary",
+    "image": "/images/ferncopy.webp",
+    "description": "Documentary"
+  },
+  {
+    "id": 7,
+    "title": "Mystery",
+    "category": "Documentary",
+    "image": "/images/secret-island.webp",
+    "description": "Documentary"
+  },
+  {
+    "id": 8,
+    "title": "Strategy",
+    "category": "Tricks",
+    "image": "/images/thumb-importance.webp",
+    "description": "Tricks"
+  },
+  {
+    "id": 9,
+    "title": "Golden Island",
+    "category": "Mystry",
+    "image": "/images/golden-island.webp",
+    "description": "Documentary"
+  },
+  {
+    "id": 10,
+    "title": "Strategy",
+    "category": "Tricks",
+    "image": "/images/transformation.webp",
+    "description": "Tricks"
+  },
+  {
+    "id": 11,
+    "title": "Control",
+    "category": "Mystry",
+    "image": "/images/control.webp",
+    "description": "Mystry"
+  }
+]

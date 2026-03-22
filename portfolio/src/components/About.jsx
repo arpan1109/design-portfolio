@@ -25,22 +25,24 @@ export default function About() {
   const problems = [
     {
       title: "Your content isn't getting noticed",
+      image: "/images/vid-frame.png", // You can use a specific project thumb here
       desc: "Strong ideas can still be skipped when the thumbnail or post design does not instantly grab attention.",
     },
     {
       title: "Your brand feels stuck",
+      image: "/images/chain.png", // Your new asset
       desc: "When visuals look random or inconsistent, it becomes harder to build a clear and memorable identity online.",
     },
     {
       title: "Your audience isn't connecting",
+      image: "/images/eye.png", // Your new asset
       desc: "People notice visuals first. Better design helps your content feel more professional, clearer, and more worth exploring.",
     },
   ];
-
   const reasons = [
     {
       title: "Unique Identity",
-      icon: "⚡️", // Simplified emoji for now, replace with custom SVG/Icon later
+      icon: "⚡️",
       color: "bg-orange-950 text-orange-400 border-orange-800",
       desc: "I will help you in making your unique identity through visuals that feel different and recognizable.",
     },
@@ -67,16 +69,16 @@ export default function About() {
   return (
     <>
       <section id="about" className="py-20 md:py-32 bg-[#0a0a0a] text-white">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left Column: Editorial Profile Image */}
-          <div className="lg:col-span-5 relative group">
+          <div className="lg:col-span-5 max-w-md mx-auto lg:max-w-none relative group">
             {/* Aspect-[4/5] creates that tall, portrait-style crop */}
-            <div className="aspect-4/5 w-full bg-zinc-900 overflow-hidden relative z-10">
+            <div className="aspect-4/5 w-full bg-zinc-900 overflow-hidden relative z-10 rounded-2xl md:rounded-3xl">
               {/* NOTE: Drop your photo into public/images/ and update this src */}
               <img
-                src="/images/profile.jpg"
-                alt="Lewy - Graphic Designer"
-                className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                src="/images/profile.webp"
+                alt="Dev Creates"
+                className="w-full h-full rounded-4xl object-cover transition-all duration-700"
               />
             </div>
             {/* Decorative offset border for depth */}
@@ -128,9 +130,9 @@ export default function About() {
           <div className="mb-24">
             <div className="mb-16">
               <h2 className="text-4xl font-prata md:text-5xl hover:text-gray-400 tracking-tight mb-4 text-white">
-                The problem
+                The Problem
               </h2>
-              <p className="text-zinc-400 max-w-2xl text-lg leading-relaxed">
+              <p className="text-zinc-400  md:text-xl leading-relaxed">
                 Good content still gets ignored when the visuals feel weak,
                 generic, or forgettable.
               </p>
@@ -141,14 +143,17 @@ export default function About() {
               {problems.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 flex flex-col gap-6 group hover:border-zinc-700 transition-colors"
+                  className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 flex items-center justify-center flex-col gap-6 group hover:border-zinc-700 transition-colors"
                 >
                   {/* Placeholder for Icon/Image - matching reference style */}
-                  <div className="w-full h-32 bg-zinc-800 rounded-xl flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full border border-zinc-700 bg-zinc-900 group-hover:bg-zinc-700/50 transition-colors flex items-center justify-center">
-                      {/* You can drop icons here later */}
-                      <div className="w-4 h-4 bg-zinc-700 rounded-full group-hover:bg-zinc-500 transition-colors"></div>
-                    </div>
+                  <div className="w-[70%] flex items-center justify-center h-40 bg-zinc-800 rounded-xl overflow-hidden relative">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-[90%] h-[90%] object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    />
+                    {/* Subtle dark overlay to keep the vibe moody */}
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
                   </div>
 
                   <div className="space-y-3">
@@ -171,7 +176,8 @@ export default function About() {
                 Why Choose Me
               </h2>
               <p className="text-zinc-400 text-md leading-relaxed">
-                I focus on visuals that feel clean, memorable, and made to represent your style in a strong way.
+                I focus on visuals that feel clean, memorable, and made to
+                represent your style in a strong way.
               </p>
             </div>
 
