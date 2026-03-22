@@ -41,7 +41,7 @@ export default function Footer() {
     {
       question: "What is your typical timeline for a project?",
       answer:
-        "Most branding and visual identity projects take between 2 to 4 weeks depending on the complexity.",
+        "Most branding and visual identity projects take between first 24 hrs depending on the complexity.",
     },
     {
       question: "Do you offer revisions?",
