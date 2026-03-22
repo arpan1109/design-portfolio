@@ -4,19 +4,23 @@ export default function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
 
   const handleToggle = () => {
-    setmenuopen(prev => !prev);
+    setmenuopen((prev) => !prev);
   };
 
   return (
     <>
-      <nav className="absolute bg-zinc-600/40 top-0 w-full z-50 flex justify-between items-center py-8 px-6 md:px-12">
+      <nav
+        className="fixed top-0 w-full z-50 flex justify-between items-center py-6 px-6 md:px-12 
+bg-zinc-700/70 backdrop-blur-md border-b border-white/40 
+shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
+      >
         {/* Logo */}
-        <div className="text-sm lg:text-2xl text-white/90 tracking-widest uppercase">
+        <div className="text-sm lg:text-2xl text-white/90 tracking-wide uppercase">
           Dev creates
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex gap-3 text-sm tracking-[0.2em] uppercase text-zinc-400">
+        <ul className="hidden md:flex gap-3 text-sm tracking-[0.2em] uppercase text-zinc-100">
           {["Work", "About", "Services", "Contact"].map((item) => (
             <li
               key={item}
@@ -43,7 +47,7 @@ export default function Navbar() {
             <p
               key={item}
               className="hover:text-zinc-300 cursor-pointer"
-              onClick={() => setmenuopen(false)} 
+              onClick={() => setmenuopen(false)}
             >
               {item}
             </p>

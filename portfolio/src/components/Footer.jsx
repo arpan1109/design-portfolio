@@ -100,7 +100,7 @@ export default function Footer() {
 
         {/* 3. CONTACT LINKS GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 border-t border-zinc-500 pt-12">
-          <div className="flex items-center border-r-2 border-white/50  justify-center">
+         <div className="flex items-center xl:border-none justify-center">
             <p className="text-4xl md:text-5xl italic font-prata leading-none tracking-tight text-white">
               Contact Me
             </p>
