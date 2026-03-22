@@ -4,6 +4,7 @@
   --font-prata: "Prata", serif;
   --font-onest: "Onest", sans-serif;
   --animate-marquee: marquee 25s linear infinite;
+  --animate-fadeIn: fadeIn 0.4s ease-out;
 
   @keyframes marquee {
     0% { transform: translateX(0%); }

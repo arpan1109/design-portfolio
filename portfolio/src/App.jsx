@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
 import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Marquee />
       <About />
       <Carousel />
+      <Footer />
     </div>
   );
 }

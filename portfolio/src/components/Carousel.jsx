@@ -44,7 +44,7 @@ export default function Carousel() {
         
         {/* Simplified Header - Controls are removed from here */}
         <div className="mb-12">
-          <h2 className="text-5xl md:text-6xl font-prata mb-4">Selected Work</h2>
+          <h2 className="text-5xl md:text-6xl font-prata mb-4">Selected Works</h2>
           <p className="text-zinc-400 max-w-md">
             A curated look at my most recent design systems and visual identities.
           </p>
