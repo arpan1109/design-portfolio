@@ -25,7 +25,7 @@ export default function About() {
   const problems = [
     {
       title: "Your content isn't getting noticed",
-      image: "/images/vid-frame.png", // You can use a specific project thumb here
+      image: "/images/vid-frame.png", 
       desc: "Strong ideas can still be skipped when the thumbnail or post design does not instantly grab attention.",
     },
     {
@@ -42,25 +42,25 @@ export default function About() {
   const reasons = [
     {
       title: "Unique Identity",
-      icon: "⚡️",
+      image: "/images/sparkles.png",
       color: "bg-orange-950 text-orange-400 border-orange-800",
       desc: "I will help you in making your unique identity through visuals that feel different and recognizable.",
     },
     {
       title: "Clean Editing",
-      icon: "✂️",
+      image: "/images/edit.png",
       color: "bg-rose-950 text-rose-400 border-rose-800",
       desc: "Sharp cutouts, dramatic lighting, smart composition, and polished Photoshop work from start to finish.",
     },
     {
       title: "Niche Understanding",
-      icon: "🎯",
+      image: "/images/target.png",
       color: "bg-pink-950 text-pink-400 border-pink-800",
       desc: "I can design for gaming, investigation, finance, documentary, and entertainment content styles.",
     },
     {
       title: "Fast Revisions",
-      icon: "🚀",
+      image: "/images/time.png",
       color: "bg-fuchsia-950 text-fuchsia-400 border-fuchsia-800",
       desc: "Quick updates, better clarity, and a clean final result that fits the channel vibe and visual style.",
     },
@@ -192,7 +192,7 @@ export default function About() {
                   <div
                     className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl ${item.color} border`}
                   >
-                    {item.icon}
+                    {item.image}
                   </div>
 
                   <div className="space-y-2">
