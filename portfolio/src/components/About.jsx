@@ -187,7 +187,7 @@ export default function About() {
   {reasons.map((item, index) => (
     <div
       key={index}
-      className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-all duration-300 group"
+      className="bg-black border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-all duration-300 group"
     >
       {/* THE FIX: 
          1. We removed the ${item.color} and 'border' classes.
