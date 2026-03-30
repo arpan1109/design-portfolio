@@ -25,7 +25,7 @@ export default function About() {
   const problems = [
     {
       title: "Your content isn't getting noticed",
-      image: "/images/vid-frame.png", 
+      image: "/images/vid-frame.png",
       desc: "Strong ideas can still be skipped when the thumbnail or post design does not instantly grab attention.",
     },
     {
@@ -188,11 +188,16 @@ export default function About() {
                   key={index}
                   className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-colors"
                 >
-                  {/* Colored Icon box matching reference */}
+                  {/* Colored Icon box */}
                   <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl ${item.color} border`}
+                    className={`w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden ${item.color} border`}
                   >
-                    {item.image}
+                    
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-6 h-6 object-contain"
+                    />
                   </div>
 
                   <div className="space-y-2">
