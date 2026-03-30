@@ -182,34 +182,37 @@ export default function About() {
             </div>
 
             {/* 4-Column Grid for Reasons */}
-            <div className="grid sm:grid-cols-3 md:grid-cols-4 gap-6">
-              {reasons.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-colors"
-                >
-                  {/* Colored Icon box */}
-                  <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden ${item.color} border`}
-                  >
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-8 h-8 object-contain mix-blend-screen brightness-125 scale-110"
-                    />
-                  </div>
+{/* --- SECTION 2: WHY CHOOSE ME --- */}
+<div className="grid sm:grid-cols-3 md:grid-cols-4 gap-6">
+  {reasons.map((item, index) => (
+    <div
+      key={index}
+      className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-all duration-300 group"
+    >
+      {/* THE FIX: 
+         1. We removed the ${item.color} and 'border' classes.
+         2. Changed w-12 to w-14 to give your custom artwork more presence.
+      */}
+      <div className="w-14 h-14 flex items-center justify-center overflow-hidden">
+        <img
+          src={item.image}
+          alt={item.title}
+          /* 'w-full h-full' makes your custom icon/bg fill the whole 14x14 space */
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
 
-                  <div className="space-y-2">
-                    <h4 className="text-lg font-bold tracking-tight text-white">
-                      {item.title}
-                    </h4>
-                    <p className="text-zinc-400 text-sm leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <div className="space-y-2">
+        <h4 className="text-lg font-bold tracking-tight text-white">
+          {item.title}
+        </h4>
+        <p className="text-zinc-400 text-sm leading-relaxed">
+          {item.desc}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
           </div>
         </div>
       </section>
