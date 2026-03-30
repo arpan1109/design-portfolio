@@ -192,11 +192,10 @@ export default function About() {
                   <div
                     className={`w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden ${item.color} border`}
                   >
-                    
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-6 h-6 object-contain"
+                      className="w-8 h-8 object-contain mix-blend-screen brightness-125 scale-110"
                     />
                   </div>
 
