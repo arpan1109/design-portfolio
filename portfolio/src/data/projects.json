@@ -71,6 +71,34 @@
   },
   {
     "id": 11,
+    "title": "Space Mystery",
+    "category": "Mystry",
+    "image": "/images/space.webp",
+    "description": "Space"
+  },
+  {
+    "id": 12,
+    "title": "Food Review",
+    "category": "Comparison",
+    "image": "/images/burger.webp",
+    "description": "Review"
+  },
+  {
+    "id": 13,
+    "title": "Comparison",
+    "category": "Comparison",
+    "image": "/images/ai-compare.webp",
+    "description": "Comparison"
+  },
+  {
+    "id": 14,
+    "title": "Comparison",
+    "category": "Comparison",
+    "image": "/images/hotel-compare.webp",
+    "description": "Comparison"
+  },
+  {
+    "id": 15,
     "title": "Control",
     "category": "Mystry",
     "image": "/images/control.webp",
