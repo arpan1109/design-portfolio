@@ -1,20 +1,20 @@
 export default function About() {
-const steps = [
+  const steps = [
     {
       title: "Concept Development & Strategic Planning",
       desc: " We start by understanding your video's topic, audience, and goal. This helps us create a powerful visual concept that grabs attention instantly.",
-      image: "/images/process-1.png", 
+      image: "/images/process-1.png",
     },
     {
       title: "Initial Sketching & Draft Design",
       desc: "Next, we craft rough ideas, layouts, and compositions to test what works best balancing emotion, clarity, and click-worthiness.",
-      image: "/images/process-2.png", 
+      image: "/images/process-2.png",
     },
     {
       title: "Final Polished Thumbnail Creation",
       desc: "Once approved, we refine everything, lighting, color grading, typography, and details to deliver a high-performing, ready to upload thumbnail.",
-      image: "/images/process-3.png", 
-    }
+      image: "/images/process-3.png",
+    },
   ];
 
   const problems = [
@@ -64,30 +64,33 @@ const steps = [
   return (
     <>
       {/* Keeping id="about" so your navbar link scrolls directly here */}
-      <section id="about" className="py-20 md:py-28 bg-black text-white border-t border-zinc-950 scroll-mt-24">
+      <section
+        id="about"
+        className="py-20 md:py-28 bg-black text-white border-t border-zinc-950 scroll-mt-24"
+      >
         <div className="max-w-7xl mx-auto px-6 font-onest">
-          
           {/* Centered Pill & Header Block */}
           <div className="flex flex-col items-center text-center mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-zinc-950 border border-zinc-900 text-xs tracking-wider uppercase text-orange-500 mb-6 font-medium">
               ↓ Process
             </div>
-            
-            <h2 className="text-4xl md:text-6xl font-prata tracking-tight max-w-5xl leading-[1.15]">
+
+            <h2 className="text-4xl md:text-6xl font-prata tracking-tight  max-w-5xl leading-2">
               Our Thumbnail Design process in <br />
               <span className="text-orange-500 italic">3 Simple Steps</span>
             </h2>
-            
+
             <p className="text-zinc-300 text-md md:text-lg  max-w-lg md:max-w-2xl mt-6 leading-relaxed">
-              From idea to impact, every thumbnail crafted with purpose, precision, and performance in mind.
+              From idea to impact, every thumbnail crafted with purpose,
+              precision, and performance in mind.
             </p>
           </div>
 
           {/* 3-Column Centered Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {steps.map((step, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex flex-col bg-zinc-950/40 border border-zinc-900/60 rounded-3xl p-6 md:p-8 hover:border-orange-500/20 transition-all duration-500 group shadow-2xl"
               >
                 {/* Step Text Information */}
@@ -95,10 +98,10 @@ const steps = [
                   <h3 className="text-lg md:text-xl font-bold text-white tracking-tight leading-snug mb-4 max-w-70">
                     {step.title}
                   </h3>
-                  
+
                   {/* Subtle horizontal division line */}
                   <div className="w-full border-t border-zinc-900 my-1"></div>
-                  
+
                   <p className="text-gray-400 text-xs md:text-sm leading-relaxed mt-3">
                     {step.desc}
                   </p>
@@ -106,16 +109,15 @@ const steps = [
 
                 {/* Card Canvas for Artwork */}
                 <div className="w-full aspect-square bg-zinc-950 rounded-2xl border border-zinc-900 overflow-hidden relative flex items-center justify-center p-4">
-                  <img 
-                    src={step.image} 
-                    alt={step.title} 
+                  <img
+                    src={step.image}
+                    alt={step.title}
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -125,8 +127,12 @@ const steps = [
           <div className="mb-24">
             <div className="mb-16">
               <h2 className="text-4xl font-prata md:text-5xl hover:text-gray-400 tracking-tight mb-4 text-white">
-                The <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">Process</span>
+                The{" "}
+                <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light py-2">
+                  Process
+                </span>
               </h2>
+
               <p className="text-zinc-400  md:text-xl leading-relaxed">
                 Good content still gets ignored when the visuals feel weak,
                 generic, or forgettable.
@@ -177,34 +183,33 @@ const steps = [
             </div>
 
             {/* 4-Column Grid for Reasons */}
-{/* --- SECTION 2: WHY CHOOSE ME --- */}
-<div className="grid sm:grid-cols-3 md:grid-cols-4 gap-6">
-  {reasons.map((item, index) => (
-    <div
-      key={index}
-      className="bg-black border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-all duration-300 group"
-    >
+            {/* --- SECTION 2: WHY CHOOSE ME --- */}
+            <div className="grid sm:grid-cols-3 md:grid-cols-4 gap-6">
+              {reasons.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-black border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-all duration-300 group"
+                >
+                  <div className="w-14 h-14 flex items-center justify-center overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      /* 'w-full h-full' makes your custom icon/bg fill the whole 14x14 space */
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
 
-      <div className="w-14 h-14 flex items-center justify-center overflow-hidden">
-        <img
-          src={item.image}
-          alt={item.title}
-          /* 'w-full h-full' makes your custom icon/bg fill the whole 14x14 space */
-          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
-        />
-      </div>
-
-      <div className="space-y-2">
-        <h4 className="text-lg font-bold tracking-tight text-white">
-          {item.title}
-        </h4>
-        <p className="text-zinc-400 text-sm leading-relaxed">
-          {item.desc}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>
+                  <div className="space-y-2">
+                    <h4 className="text-lg font-bold tracking-tight text-white">
+                      {item.title}
+                    </h4>
+                    <p className="text-zinc-400 text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
