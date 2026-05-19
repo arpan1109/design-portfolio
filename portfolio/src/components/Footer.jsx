@@ -61,13 +61,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer  className="bg-[#0a0a0a] text-white border-b-2  pb-12 overflow-hidden relative border-t border-zinc-900">
+    <footer  className="bg-[#0a0a0a] text-white border-b-2 pt-3 pb-12 overflow-hidden relative border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 font-onest relative z-10">
         {/* 1. FAQ SECTION */}
         <div className="mb-32">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
             <div className="md:col-span-4">
-              <h2 className="text-4xl md:text-7xl font-onest tracking-tight mb-4 text-white">
+              <h2 className="text-4xl md:text-7xl font-onest tracking-tight mb-4 text-orange-500">
                 FAQs
               </h2>
               <p className="text-zinc-400 md:text-xl">
@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
 
         {/* 4. BOTTOM BAR */}
-        <div className="flex flex-col md:flex-row justify-between items-center md:text-xl text-md text-zinc-200 tracking-wide gap-4 border-t border-zinc-900 pt-12">
+        <div className="flex flex-col md:flex-row justify-between items-center md:text-xl text-md text-orange-500 tracking-wide gap-4 border-t border-zinc-900 pt-12">
           <p>© {new Date().getFullYear()} Dev Creates4U</p>
           <p>Delhi, INDIA.</p>
           <div className="flex gap-6">

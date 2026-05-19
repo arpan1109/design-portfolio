@@ -70,17 +70,19 @@ export default function About() {
       >
         <div className="max-w-7xl mx-auto px-6 font-onest">
           {/* Centered Pill & Header Block */}
+          {/* Centered Pill & Header Block */}
           <div className="flex flex-col items-center text-center mb-16 md:mb-24">
             <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-zinc-950 border border-zinc-900 text-xs tracking-wider uppercase text-orange-500 mb-6 font-medium">
               ↓ Process
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-prata tracking-tight  max-w-5xl leading-2">
+            {/* THE FIX: Changed 'leading-2' to 'leading-tight' or 'leading-[1.15]' */}
+            <h2 className="text-4xl md:text-6xl font-prata tracking-tight max-w-5xl leading-tight">
               Our Thumbnail Design process in <br />
               <span className="text-orange-500 italic">3 Simple Steps</span>
             </h2>
 
-            <p className="text-zinc-300 text-md md:text-lg  max-w-lg md:max-w-2xl mt-6 leading-relaxed">
+            <p className="text-zinc-300 text-md md:text-lg max-w-lg md:max-w-2xl mt-6 leading-relaxed">
               From idea to impact, every thumbnail crafted with purpose,
               precision, and performance in mind.
             </p>
