@@ -4,11 +4,13 @@ import Marquee from "./components/Marquee";
 import About from "./components/About";
 import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
+import { Works } from "./components/Works";
 
 function App() {
   return (
     <div className="bg-[#0a0a0a] min-h-screen selection:bg-zinc-800 selection:text-white">
       <Navbar />
+      <Works/>
       <Hero />
       <Marquee />
       <About />

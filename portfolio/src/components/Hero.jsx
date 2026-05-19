@@ -5,10 +5,10 @@ export default function Hero() {
       {/* Massive Typography - NOW USING PRATA */}
       <div className="text-center z-10 px-4">
         <h1 className="text-7xl md:text-9xl lg:text-[11rem] font-prata leading-none tracking-tight">
-          VISUAL ghyth
+          Crafting 
         </h1>
         <h1 className="text-4xl md:text-6xl lg:text-[11rem] font-prata italic leading-none text-zinc-500 pr-4 md:pr-12">
-          NARRATIVES.
+          Instant clicks
         </h1>
       </div>
 
