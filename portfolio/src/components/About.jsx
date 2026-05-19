@@ -1,25 +1,20 @@
 export default function About() {
-  const processes = [
+const steps = [
     {
-      id: "01",
-      title: "Discovery",
-      desc: "Share your ideas to reach audience & core objectives.",
+      title: "Concept Development & Strategic Planning",
+      desc: "We start by understanding your video's topic, audience, and goal. This helps us create a powerful visual concept that grabs attention instantly.",
+      image: "/images/process-1.png", // Replace with your chat snippet image
     },
     {
-      id: "02",
-      title: "Concept",
-      desc: "Crafting initial visual directions and design boards.",
+      title: "Initial Sketching & Draft Design",
+      desc: "Next, we craft rough ideas, layouts, and compositions to test what works best balancing emotion, clarity, and click-worthiness.",
+      image: "/images/process-2.png", // Replace with your tablet sketch image
     },
     {
-      id: "03",
-      title: "Refinement",
-      desc: "Polishing the chosen design with precision.",
-    },
-    {
-      id: "04",
-      title: "Delivery",
-      desc: "Get production-ready assets within guidelines.",
-    },
+      title: "Final Polished Thumbnail Creation",
+      desc: "Once approved, we refine everything, lighting, color grading, typography, and details to deliver a high-performing, ready to upload thumbnail.",
+      image: "/images/process-3.png", // Replace with your final presentation monitor image
+    }
   ];
 
   const problems = [
@@ -68,59 +63,59 @@ export default function About() {
 
   return (
     <>
-      <section id="about" className="py-20 md:py-32 bg-[#0a0a0a] text-white">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          {/* Left Column: Editorial Profile Image */}
-          <div className="lg:col-span-5 max-w-md mx-auto lg:max-w-none relative group">
-            {/* Aspect-[4/5] creates that tall, portrait-style crop */}
-            <div className="aspect-4/5 w-full bg-zinc-900 overflow-hidden relative z-10 rounded-2xl md:rounded-3xl">
-              {/* NOTE: Drop your photo into public/images/ and update this src */}
-              <img
-                src="/images/profile.webp"
-                alt="Dev Creates"
-                className="w-full h-full rounded-4xl object-cover transition-all duration-700"
-              />
+      {/* Keeping id="about" so your navbar link scrolls directly here */}
+      <section id="about" className="py-20 md:py-28 bg-black text-white border-t border-zinc-950 scroll-mt-24">
+        <div className="max-w-7xl mx-auto px-6 font-onest">
+          
+          {/* Centered Pill & Header Block */}
+          <div className="flex flex-col items-center text-center mb-16 md:mb-24">
+            <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-zinc-950 border border-zinc-900 text-xs tracking-wider uppercase text-orange-500 mb-6 font-medium">
+              ↓ Process
             </div>
-            {/* Decorative offset border for depth */}
-            <div className="absolute -bottom-6 -right-6 w-3/4 h-3/4 border border-zinc-800 z-0 hidden md:block"></div>
-          </div>
-
-          {/* Right Column: Bio & Process */}
-          <div className="lg:col-span-7 flex flex-col">
-            <h2 className="text-5xl md:text-6xl font-prata mb-8 leading-tight">
-              Hi, Dev this side !
+            
+            <h2 className="text-4xl md:text-6xl font-prata tracking-tight max-w-4xl leading-[1.15]">
+              Our Thumbnail Design process in <br />
+              <span className="text-orange-500 italic">3 Simple Steps</span>
             </h2>
-
-            <p className="text-zinc-400  text-lg md:text-2xl leading-relaxed mb-16 max-w-2xl">
-              I am an independent graphic designer specializing in crafting
-              bold, minimalist brand identities and visual systems. My focus is
-              on helping businesses communicate their core values without the
-              unnecessary noise.
+            
+            <p className="text-zinc-500 text-sm md:text-base max-w-xl mt-6 leading-relaxed">
+              From idea to impact, every thumbnail crafted with purpose, precision, and performance in mind.
             </p>
-
-            {/* Workflow Process Grid */}
-            <div>
-              <h3 className="text-xl md:text-4xl font-onest font-bold uppercase text-zinc-500 mb-8 border-b border-zinc-800 pb-4">
-                The Process
-              </h3>
-
-              <div className="grid grid-cols-2 md:grid-cols-2 gap-x-8 gap-y-10">
-                {processes.map((event) => (
-                  <div key={event.id} className="flex flex-col gap-3">
-                    <span className="font-prata text-3xl text-zinc-500">
-                      {event.id}
-                    </span>
-                    <h4 className="text-lg font-bold text-white tracking-wide">
-                      {event.title}
-                    </h4>
-                    <p className="text-zinc-400 text-sm leading-relaxed">
-                      {event.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
+
+          {/* 3-Column Centered Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {steps.map((step, index) => (
+              <div 
+                key={index} 
+                className="flex flex-col bg-zinc-950/40 border border-zinc-900/60 rounded-3xl p-6 md:p-8 hover:border-orange-500/20 transition-all duration-500 group shadow-2xl"
+              >
+                {/* Step Text Information */}
+                <div className="flex flex-col items-center text-center flex-1 mb-8">
+                  <h3 className="text-lg md:text-xl font-bold text-white tracking-tight leading-snug mb-4 max-w-70">
+                    {step.title}
+                  </h3>
+                  
+                  {/* Subtle horizontal division line */}
+                  <div className="w-full border-t border-zinc-900 my-1"></div>
+                  
+                  <p className="text-zinc-500 text-xs md:text-sm leading-relaxed mt-3">
+                    {step.desc}
+                  </p>
+                </div>
+
+                {/* Card Canvas for Artwork */}
+                <div className="w-full aspect-square bg-zinc-950 rounded-2xl border border-zinc-900 overflow-hidden relative flex items-center justify-center p-4">
+                  <img 
+                    src={step.image} 
+                    alt={step.title} 
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
@@ -130,7 +125,7 @@ export default function About() {
           <div className="mb-24">
             <div className="mb-16">
               <h2 className="text-4xl font-prata md:text-5xl hover:text-gray-400 tracking-tight mb-4 text-white">
-                The Problem
+                The Process
               </h2>
               <p className="text-zinc-400  md:text-xl leading-relaxed">
                 Good content still gets ignored when the visuals feel weak,

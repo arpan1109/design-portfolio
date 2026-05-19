@@ -54,7 +54,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {menuopen && (
-        <div className="md:hidden fixed inset-0 top-[76px] bg-black/95 backdrop-blur-md text-white flex flex-col items-center justify-center gap-10 tracking-[0.3em] uppercase text-lg z-40 animate-fadeIn">
+        <div className="md:hidden fixed inset-0 top-[76px] bg-gray-800/95 backdrop-blur-md text-white flex flex-col items-center justify-center gap-10 tracking-[0.3em] uppercase text-lg z-40 animate-fadeIn">
           <a href="#home" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Home</a>
           <a href="#about" onClick={closeMenu} className="hover:text-orange-500 transition-colors">About</a>
           <a href="#work" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Services</a>

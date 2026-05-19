@@ -36,16 +36,16 @@ export default function Hero() {
         </p>
 
         {/* Dynamic Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto font-onest">
+        <div className="flex flex-row sm:flex-row items-center justify-center gap-4 w-full sm:w-auto font-onest">
           <a
             href="#contact"
-            className="w-full sm:w-auto bg-orange-600 hover:bg-yellow-500 text-white font-semibold rounded-full px-8 py-4 text-sm transition-all duration-300 shadow-lg shadow-indigo-600/20 text-center"
+            className="w-full sm:w-auto bg-orange-600 hover:bg-yellow-700 text-white font-semibold rounded-full px-8 py-4 text-sm transition-all duration-300 shadow-lg shadow-indigo-600/20 text-center"
           >
             Get Started
           </a>
           <a
             href="#work"
-            className="w-full sm:w-auto bg-zinc-900/50 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white font-semibold rounded-full px-8 py-4 text-sm transition-all duration-300 text-center"
+            className="w-full sm:w-auto bg-zinc-500/50 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-400 text-zinc-300 hover:text-white rounded-full px-8 py-4 text-sm transition-all duration-300 text-center"
           >
             View Portfolio
           </a>
