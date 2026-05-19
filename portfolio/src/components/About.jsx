@@ -2,18 +2,18 @@ export default function About() {
 const steps = [
     {
       title: "Concept Development & Strategic Planning",
-      desc: "We start by understanding your video's topic, audience, and goal. This helps us create a powerful visual concept that grabs attention instantly.",
-      image: "/images/process-1.png", // Replace with your chat snippet image
+      desc: " We start by understanding your video's topic, audience, and goal. This helps us create a powerful visual concept that grabs attention instantly.",
+      image: "/images/process-1.png", 
     },
     {
       title: "Initial Sketching & Draft Design",
       desc: "Next, we craft rough ideas, layouts, and compositions to test what works best balancing emotion, clarity, and click-worthiness.",
-      image: "/images/process-2.png", // Replace with your tablet sketch image
+      image: "/images/process-2.png", 
     },
     {
       title: "Final Polished Thumbnail Creation",
       desc: "Once approved, we refine everything, lighting, color grading, typography, and details to deliver a high-performing, ready to upload thumbnail.",
-      image: "/images/process-3.png", // Replace with your final presentation monitor image
+      image: "/images/process-3.png", 
     }
   ];
 
@@ -73,12 +73,12 @@ const steps = [
               ↓ Process
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-prata tracking-tight max-w-4xl leading-[1.15]">
+            <h2 className="text-4xl md:text-6xl font-prata tracking-tight max-w-5xl leading-[1.15]">
               Our Thumbnail Design process in <br />
               <span className="text-orange-500 italic">3 Simple Steps</span>
             </h2>
             
-            <p className="text-zinc-500 text-sm md:text-base max-w-xl mt-6 leading-relaxed">
+            <p className="text-zinc-300 text-md md:text-lg  max-w-lg md:max-w-2xl mt-6 leading-relaxed">
               From idea to impact, every thumbnail crafted with purpose, precision, and performance in mind.
             </p>
           </div>
@@ -99,7 +99,7 @@ const steps = [
                   {/* Subtle horizontal division line */}
                   <div className="w-full border-t border-zinc-900 my-1"></div>
                   
-                  <p className="text-zinc-500 text-xs md:text-sm leading-relaxed mt-3">
+                  <p className="text-gray-400 text-xs md:text-sm leading-relaxed mt-3">
                     {step.desc}
                   </p>
                 </div>
@@ -125,7 +125,7 @@ const steps = [
           <div className="mb-24">
             <div className="mb-16">
               <h2 className="text-4xl font-prata md:text-5xl hover:text-gray-400 tracking-tight mb-4 text-white">
-                The Process
+                The <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">Process</span>
               </h2>
               <p className="text-zinc-400  md:text-xl leading-relaxed">
                 Good content still gets ignored when the visuals feel weak,
@@ -184,10 +184,7 @@ const steps = [
       key={index}
       className="bg-black border border-zinc-800 rounded-2xl p-6 flex flex-col gap-5 hover:border-zinc-700 transition-all duration-300 group"
     >
-      {/* THE FIX: 
-         1. We removed the ${item.color} and 'border' classes.
-         2. Changed w-12 to w-14 to give your custom artwork more presence.
-      */}
+
       <div className="w-14 h-14 flex items-center justify-center overflow-hidden">
         <img
           src={item.image}
