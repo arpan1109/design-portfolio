@@ -2,7 +2,7 @@ import Navbar from "./components/Navabar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
-import Carousel from "./components/Carousel";
+// import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
 import { Works } from "./components/Works";
 
@@ -14,7 +14,7 @@ function App() {
       <Hero />
       <Marquee />
       <About />
-      <Carousel />
+      {/* <Carousel /> */}
       <Footer />
     </div>
   );
