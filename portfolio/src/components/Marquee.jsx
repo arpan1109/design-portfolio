@@ -7,8 +7,8 @@ export default function Marquee() {
     <section className="py-8 bg-[#0a0a0a] text-white overflow-hidden border-b border-zinc-900">
       
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4 font-onest">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+      <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col py-2 md:flex-row md:items-end justify-between gap-4 font-onest">
+        <h2 className="text-4xl md:text-5xl p-3 font-bold tracking-tight">
           Moving <span className='bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light'>Showcase</span>
         </h2>
         <p className="text-zinc-400 text-sm md:text-base max-w-sm leading-relaxed">

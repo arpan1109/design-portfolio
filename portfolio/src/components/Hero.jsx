@@ -23,7 +23,7 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-prata tracking-tight leading-[1.1] mb-6">
           Instant{" "}
           <span
-            className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light"
+            className="bg-gradient-to-r from-amber-400  via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light"
           >
             Clicks.
           </span>
@@ -39,7 +39,7 @@ export default function Hero() {
         <div className="flex flex-row sm:flex-row items-center justify-center gap-4 w-full sm:w-auto font-onest">
           <a
             href="#contact"
-            className="w-full sm:w-auto bg-orange-600 hover:bg-yellow-700 text-white font-semibold rounded-full px-8 py-4 text-sm transition-all duration-300 shadow-lg shadow-indigo-600/20 text-center"
+            className="w-full sm:w-auto bg-orange-600 p-3 hover:bg-yellow-700 text-white font-semibold rounded-full px-8 py-4 text-sm transition-all duration-300 shadow-lg shadow-indigo-600/20 text-center"
           >
             Get Started
           </a>
