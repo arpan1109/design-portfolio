@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen bg-[#0a0a0a] text-white flex flex-col items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden">
 
       {/* Massive Typography - NOW USING PRATA */}
       <div className="text-center z-10 px-4">
         <h1 className="text-7xl md:text-9xl lg:text-[11rem] font-prata leading-none tracking-tight">
-          VISUAL
+          VISUAL ghyth
         </h1>
         <h1 className="text-4xl md:text-6xl lg:text-[11rem] font-prata italic leading-none text-zinc-500 pr-4 md:pr-12">
           NARRATIVES.
