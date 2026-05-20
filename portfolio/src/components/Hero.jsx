@@ -44,7 +44,7 @@ export default function Hero() {
             Get Started
           </a>
           <a
-            href="#work"
+            href="/work"
             className="w-full sm:w-auto bg-zinc-500/50 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-400 text-zinc-300 hover:text-white rounded-full px-8 py-4 text-sm transition-all duration-300 text-center"
           >
             View Portfolio

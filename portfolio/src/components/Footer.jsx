@@ -88,11 +88,11 @@ export default function Footer() {
 
         {/* 2. MASSIVE CALL TO ACTION */}
         <div id="contact" className="mb-14">
-          <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-prata leading-none tracking-tight mb-6">
+          <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-prata leading-none tracking-tight mb-6 bg-gradient-to-r from-amber-400  via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
             Let's create <br />
-            <span className="text-white/60 italic">together.</span>
+            <span className="text-white italic">together.</span>
           </h2>
-          <p className="text-xl pt-3  text-white md:text-2xl ">
+          <p className="text-xl pt-3  text-white/60 md:text-2xl ">
             Currently available for freelance projects and agency
             collaborations.
           </p>
@@ -101,7 +101,7 @@ export default function Footer() {
         {/* 3. CONTACT LINKS GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 border-t border-zinc-500 pt-12">
          <div className="flex items-center xl:border-none justify-center">
-            <p className="text-4xl md:text-5xl italic font-prata leading-none tracking-tight text-white">
+            <p className="text-4xl md:text-5xl italic font-onest text-orange-400 leading-none tracking-wide">
               Contact Me
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function Footer() {
           <div className="flex gap-6">
             <a
               href="mailto:divyanshpal17@gmail.com"
-              className="flex items-center gap-2 hover:text-zinc-500 transition-colors group"
+              className="flex items-center gap-2 hover:text-amber-300 transition-colors group"
             >
               <svg
                 xmlns="http://www.w3.org"
@@ -156,7 +156,7 @@ export default function Footer() {
 
             <a
               href="https://www.instagram.com/dev_creates4u/"
-              className="flex items-center gap-2 hover:text-zinc-500 transition-colors group"
+              className="flex items-center gap-2 hover:text-amber-300 transition-colors group"
             >
               <svg
                 xmlns="http://www.w3.org"
@@ -170,7 +170,7 @@ export default function Footer() {
 
             <a
               href="YOUR_LINKEDIN_URL"
-              className="flex items-center gap-2 hover:text-zinc-500 transition-colors group"
+              className="flex items-center gap-2 hover:text-amber-300 transition-colors group"
             >
               <svg
                 xmlns="http://www.w3.org"

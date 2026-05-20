@@ -130,7 +130,7 @@ export default function About() {
             <div className="mb-16">
               <h2 className="text-4xl font-prata md:text-5xl hover:text-gray-400 tracking-tight mb-4 text-white">
                 The{" "}
-                <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light py-2">
+                <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-light py-2">
                   Process
                 </span>
               </h2>
