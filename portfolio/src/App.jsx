@@ -26,7 +26,7 @@ export default function App() {
               </>
             } 
           />
-          <Route path="/work" element={<Works />} />
+          <Route path="/works" element={<Works />} />
         </Routes>
       </div>
     </Router>
