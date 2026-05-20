@@ -299,30 +299,34 @@ export default function About() {
               precision, and performance in mind.
             </p>
           </div>
-
-          {/* Flexible Mobile Row / Fixed Desktop Grid Wrapper */}
-          <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory scrollbar-none pb-6 -mx-6 px-6 md:mx-0 md:px-0">
+          <div className="grid grid-cols-3 gap-1.5 sm:gap-4 md:gap-8 w-full max-w-7xl mx-auto md:mx-0 md:px-0">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="flex flex-col min-w-[85vw] md:min-w-0 bg-zinc-950/40 border border-zinc-900/60 rounded-3xl p-6 md:p-8 hover:border-orange-500/20 transition-all duration-500 group shadow-2xl snap-center"
+                /* 1. Changed 'p-6' to 'p-2' on mobile so the cards remain compact.
+        2. Swapped borders on mobile for a clean, non-crowded appearance.
+      */
+                className="flex flex-col bg-zinc-950/40 border border-zinc-900/30 md:border-zinc-900/60 rounded-xl sm:rounded-2xl md:rounded-3xl p-2 sm:p-6 md:p-8 hover:border-orange-500/20 transition-all duration-500 group shadow-2xl"
               >
                 {/* Step Text Information */}
-                <div className="flex flex-col items-center text-center flex-1 mb-8">
-                  <h3 className="text-lg md:text-xl font-bold text-white tracking-tight leading-snug mb-4 max-w-70">
+                <div className="flex flex-col items-center text-center flex-1 mb-3 sm:mb-6">
+                  {/* Title: Very small on mobile (text-[10px]) to guarantee it fits on 2-3 lines */}
+                  <h3 className="text-[10px] sm:text-lg md:text-xl font-bold text-white tracking-tight leading-tight mb-1 sm:mb-4 max-w-full">
                     {step.title}
                   </h3>
 
-                  {/* Subtle horizontal division line */}
-                  <div className="w-full border-t border-zinc-900 my-1"></div>
+                  {/* Micro division line */}
+                  <div className="w-full border-t border-zinc-900/60 my-1"></div>
 
-                  <p className="text-zinc-400 text-xs md:text-sm leading-relaxed mt-3 font-light">
+                  {/* Description: Hidden or extremely minimized on mobile viewports to prevent text overlap */}
+                  <p className="text-zinc-500 text-[8px] sm:text-xs md:text-sm leading-normal mt-1 hidden sm:block">
                     {step.desc}
                   </p>
                 </div>
 
                 {/* Card Canvas for Artwork */}
-                <div className="w-full aspect-square bg-zinc-950 rounded-2xl border border-zinc-900 overflow-hidden relative flex items-center justify-center p-4">
+                {/* Aspect-square ensures the images maintain a perfectly symmetrical grid layout */}
+                <div className="w-full aspect-square bg-zinc-950/80 rounded-lg sm:rounded-2xl border border-zinc-900/40 overflow-hidden relative flex items-center justify-center p-1 sm:p-4">
                   <img
                     src={step.image}
                     alt={step.title}
@@ -334,9 +338,11 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section id="services" className="py-16 md:py-24 bg-black border-t border-zinc-950 text-white scroll-mt-24">
+      <section
+        id="services"
+        className="py-16 md:py-24 bg-black border-t border-zinc-950 text-white scroll-mt-24"
+      >
         <div className="max-w-7xl mx-auto px-6 font-onest">
-          
           {/* --- THE PROBLEM --- */}
           <div className="mb-24">
             <div className="mb-16">
@@ -422,7 +428,6 @@ export default function About() {
               ))}
             </div>
           </div>
-          
         </div>
       </section>
     </>
