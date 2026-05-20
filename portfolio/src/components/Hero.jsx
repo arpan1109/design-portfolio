@@ -106,7 +106,7 @@ export default function Hero() {
           
           {/* Secondary Button */}
           <a
-            href="/work"
+            href="/works"
             className="w-full sm:w-auto bg-zinc-950 border border-zinc-900 text-orange-500 font-medium px-8 py-4 rounded-full hover:bg-orange-500 hover:text-black hover:border-orange-500 transition-all duration-300 text-center cursor-pointer"
           >
             View Portfolio
