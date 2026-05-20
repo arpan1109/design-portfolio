@@ -281,7 +281,7 @@ export default function About() {
     <>
       <section
         id="about"
-        className="py-7 md:py-10 bg-black text-white border-t border-zinc-950 scroll-mt-24"
+        className="py-2 bg-black text-white border-t border-zinc-950 scroll-mt-24"
       >
         <div className="max-w-7xl mx-auto px-6 font-onest">
           {/* Centered Pill & Header Block */}
@@ -340,12 +340,12 @@ export default function About() {
       </section>
       <section
         id="services"
-        className="py-7 md:py-10 bg-black border-t border-zinc-950 text-white scroll-mt-24"
+        className="py-2 md:py-10 bg-black border-t border-zinc-950 text-white scroll-mt-24"
       >
         <div className="max-w-7xl mx-auto px-6 font-onest">
           {/* --- THE PROBLEM --- */}
-          <div className="mb-24">
-            <div className="mb-16">
+          <div className="mb-3">
+            <div className="mb-6">
               <h2 className="text-4xl font-prata md:text-5xl tracking-tight mb-4 text-white">
                 The{" "}
                 <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-light py-2">
@@ -390,7 +390,7 @@ export default function About() {
 
           {/* --- WHY CHOOSE ME --- */}
           <div>
-            <div className="mb-16">
+            <div className="mb-3">
               <h2 className="text-3xl md:text-5xl font-prata tracking-tight mb-4 text-white">
                 Why <span className="text-orange-500">Choose Me</span>
               </h2>
