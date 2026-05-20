@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navabar.jsx";
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
-import Carousel from "./components/Carousel.jsx";
+// import Carousel from "./components/Carousel.jsx";
 import Footer from "./components/Footer.jsx";
 import Works from "./components/Works.jsx";
 
@@ -20,7 +20,7 @@ export default function App() {
             element = {
               <>
                 <Hero />
-                <Carousel />
+                {/* <Carousel /> */}
                 <About />
                 <Footer />
               </>
