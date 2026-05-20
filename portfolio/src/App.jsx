@@ -1,10 +1,12 @@
-import Navbar from "./components/Navabar";
+// THE FIX: Add "as Router" right here in the brackets
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Marquee from "./components/Marquee";
 import About from "./components/About";
-// import Carousel from "./components/Carousel";
+import Carousel from "./components/Carousel";
 import Footer from "./components/Footer";
-import  Works  from "./components/Works";
+import Works from "./pages/Works";
 
 export default function App() {
   return (
@@ -13,10 +15,9 @@ export default function App() {
         <Navbar />
         
         <Routes>
-          {/* Main Landing Page Route */}
           <Route 
             path="/" 
-            element={
+            element = {
               <>
                 <Hero />
                 <Carousel />
@@ -25,8 +26,6 @@ export default function App() {
               </>
             } 
           />
-          
-          
           <Route path="/work" element={<Works />} />
         </Routes>
       </div>
