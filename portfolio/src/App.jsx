@@ -1,12 +1,12 @@
 // THE FIX: Add "as Router" right here in the brackets
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Carousel from "./components/Carousel";
-import Footer from "./components/Footer";
-import Works from "./pages/Works";
+import Navbar from "./components/Navabar.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Carousel from "./components/Carousel.jsx";
+import Footer from "./components/Footer.jsx";
+import Works from "./pages/Works.jsx";
 
 export default function App() {
   return (
