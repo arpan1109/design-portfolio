@@ -281,7 +281,7 @@ export default function About() {
     <>
       <section
         id="about"
-        className="py-16 md:py-24 bg-black text-white border-t border-zinc-950 scroll-mt-24"
+        className="py-7 md:py-10 bg-black text-white border-t border-zinc-950 scroll-mt-24"
       >
         <div className="max-w-7xl mx-auto px-6 font-onest">
           {/* Centered Pill & Header Block */}
@@ -340,7 +340,7 @@ export default function About() {
       </section>
       <section
         id="services"
-        className="py-16 md:py-24 bg-black border-t border-zinc-950 text-white scroll-mt-24"
+        className="py-7 md:py-10 bg-black border-t border-zinc-950 text-white scroll-mt-24"
       >
         <div className="max-w-7xl mx-auto px-6 font-onest">
           {/* --- THE PROBLEM --- */}
