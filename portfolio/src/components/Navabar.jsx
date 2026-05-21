@@ -32,7 +32,7 @@ export default function Navbar() {
           <a href="#about" className="hover:text-orange-500 transition-colors cursor-pointer uppercase">
             About
           </a>
-          <a href="#work" className="hover:text-orange-500 transition-colors cursor-pointer uppercase">
+          <a href="#works" className="hover:text-orange-500 transition-colors cursor-pointer uppercase">
             Services
           </a>
           <a

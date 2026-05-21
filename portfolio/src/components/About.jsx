@@ -389,7 +389,54 @@ export default function About() {
           </div>
 
           {/* --- WHY CHOOSE ME --- */}
+          {/* ================= NEW ABOUT ME BIOGRAPHY SECTION ================= */}
+          <section className="py-20 bg-black text-white border-t border-zinc-950">
+            <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              {/* Left Column: Premium Circular Image Frame */}
+              <div className="lg:col-span-5 max-w-sm sm:max-w-md mx-auto lg:max-w-none relative group order-2 lg:order-1 mt-8 lg:mt-0">
+                <div className="aspect-square w-full bg-zinc-950 overflow-hidden relative z-10 rounded-full border border-zinc-900/60">
+                  <img
+                    src="/images/profile.webp" 
+                    alt="profile img"
+                    className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                  />
+                </div>
+                {/* Soft Ambient Brand Glow Behind the Circle */}
+                <div className="absolute inset-0 bg-orange-500/5 blur-3xl rounded-full z-0 opacity-50 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+              </div>
 
+              {/* Right Column: Catchy, High-Impact Biography Content */}
+              <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left order-1 lg:order-2 font-onest">
+                {/* Small Section Pill */}
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950 border border-zinc-900 text-xs tracking-wider uppercase text-orange-500 mb-6 font-medium">
+                  👤 About Me
+                </div>
+
+                <h2 className="text-4xl md:text-5xl font-prata tracking-tight text-white mb-8">
+                  Built for{" "}
+                  <span className="text-orange-500 italic">Creators</span>
+                </h2>
+
+                {/* Optimized text: Trimmed down, formatted cleanly with subtle layout breaks */}
+                <div className="space-y-5 text-sm md:text-base text-zinc-400 font-light leading-relaxed max-w-xl">
+                  <p>
+                    Hey everyone, I’m{" "}
+                    <span className=" font-prata bg-linear-to-r from-yellow-200  via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
+                      Dev
+                    </span>
+                    . I engineer high-click visual structures designed
+                    explicitly to pull audiences in, break feed stagnation, and
+                    drive real video engagement.
+                  </p>
+
+                  <p className="text-zinc-500 text-xs sm:text-sm italic border-l-2 border-orange-500/40 pl-4 mt-6">
+                    "From dynamic title alignment to color mapping, everything
+                    is built strategically with conversion metrics in mind."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </>

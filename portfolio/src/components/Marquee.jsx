@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Marquee() {
   const row1 = [
-    "/images/doomsday.png",
-    "/images/charles.png",
+    "/images/doomsday.webp",
+    "/images/charles.jpg",
     "/images/cleo-abram.png",
     "/images/altman.png",
     "/images/gta-car.webp",
@@ -17,12 +17,12 @@ export default function Marquee() {
     "/images/remake.jpg",
     "/images/ai-compare.webp",
     "/images/millionare.webp",
+    "/images/gta-car.webp",
     "/images/online-earning.png",
     "/images/elon-evolution.png",
     "/images/hiest-thumbnail.png",
     "/images/gta-fails.webp",
     "/images/golden-island.webp",
-    "/images/doomsday.png",
   ];
   
   const row3 = [
