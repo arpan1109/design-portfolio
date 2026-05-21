@@ -12,10 +12,10 @@
 
   }
   /* Infinite Left Scrolling Animation */
-  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee: marquee 60s linear infinite;
   
   /* Infinite Right Scrolling Animation */
-  --animate-marquee-reverse: marquee-reverse 25s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 60s linear infinite;
 
   @keyframes marquee {
     0% { transform: translateX(0%); }
