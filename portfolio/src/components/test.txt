@@ -1,0 +1,66 @@
+export default function AllWork() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <main className="min-h-screen bg-black text-white pt-28 pb-20 px-4 sm:px-6 md:px-12 font-onest">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Header Block */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-900 pb-8 mb-12 gap-6">
+          <div>
+            <Link to="/" className="text-xs text-orange-500 uppercase tracking-widest hover:underline mb-3 inline-block">
+               ← Back to Home
+            </Link>
+            <h1 className="text-4xl pt-1 md:text-6xl font-prata tracking-tight text-white mt-1">
+              Thumbnail <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-light">Archive</span>
+            </h1>
+          </div>
+          <p className="text-zinc-500 max-w-sm text-sm md:text-base leading-relaxed">
+            A complete collection of visual designs, high-click thumbnails, and digital assets engineered for creator growth.
+          </p>
+        </div>
+
+        {/* --- THE FIX: Optimized Responsive Grid System --- */}
+        {/* Changed gap-8 to gap-3 on mobile to prevent squishing cards */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
+          {allProjects.map((project, index) => (
+            <div 
+              key={index} 
+              /* Changed p-4 to p-2.5 on mobile to free up space for text/images */
+              className="flex flex-col bg-zinc-950/60 border border-zinc-900 rounded-2xl sm:rounded-3xl p-2.5 sm:p-5 hover:border-orange-500/30 transition-all duration-500 group cursor-pointer shadow-xl"
+            >
+              {/* Asset Box */}
+              {/* Changed mb-5 to mb-3 on mobile */}
+              <div className="w-full aspect-video bg-zinc-900/40 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-900 relative flex items-center justify-center mb-3 sm:mb-5">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Text Info */}
+              {/* Removed hidden md:block so titles show beautifully on mobile layout */}
+              <div className="px-1 pb-1 flex flex-col flex-1 justify-between">
+                <div>
+                  {/* Category: Reduced text size on mobile to text-[9px] */}
+                  <p className="text-zinc-500 text-[9px] sm:text-[11px] tracking-wider sm:tracking-widest uppercase mb-0.5 sm:mb-1 truncate">
+                    {project.category}
+                  </p>
+                  
+                  {/* Title: Fluid text sizing and multi-line clamping to prevent card breaking */}
+                  <h3 className="text-xs sm:text-lg md:text-xl font-bold text-white group-hover:text-orange-500 transition-colors duration-300 line-clamp-2 leading-snug">
+                    {project.title}
+                  </h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </main>
+  );
+}

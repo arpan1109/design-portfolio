@@ -389,45 +389,7 @@ export default function About() {
           </div>
 
           {/* --- WHY CHOOSE ME --- */}
-          <div>
-            <div className="mb-3">
-              <h2 className="text-3xl md:text-5xl font-prata tracking-tight mb-4 text-white">
-                Why <span className="text-orange-500">Choose Me</span>
-              </h2>
-              <p className="text-zinc-400 text-base md:text-lg max-w-2xl leading-relaxed">
-                I focus on visuals that feel clean, memorable, and made to
-                represent your style in a strong way.
-              </p>
-            </div>
 
-            {/* 4-Column Grid for Reasons */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-              {reasons.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-zinc-950/20 border border-zinc-900/80 rounded-2xl p-6 flex flex-col gap-5 hover:border-orange-500/20 transition-all duration-300 group shadow-lg"
-                >
-                  {/* Clean Icon Wrapper */}
-                  <div className="w-14 h-14 flex items-center justify-center overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="text-lg font-bold tracking-tight text-white group-hover:text-orange-500 transition-colors">
-                      {item.title}
-                    </h4>
-                    <p className="text-zinc-400 text-sm leading-relaxed font-light">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
     </>

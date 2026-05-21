@@ -88,7 +88,7 @@ export default function Footer() {
 
         {/* 2. MASSIVE CALL TO ACTION */}
         <div id="contact" className="mb-14">
-          <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-prata leading-none tracking-tight mb-6 bg-gradient-to-r from-amber-400  via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
+          <h2 className="text-6xl md:text-8xl lg:text-[9rem] font-prata leading-none tracking-tight mb-6 bg-gradient-to-r from-yellow-200  via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
             Let's create <br />
             <span className="text-white italic">together.</span>
           </h2>
