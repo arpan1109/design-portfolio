@@ -348,7 +348,7 @@ export default function About() {
             <div className="mb-6">
               <h2 className="text-4xl font-prata md:text-5xl tracking-tight mb-4 text-white">
                 The{" "}
-                <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-light py-2">
+                <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-bold py-2">
                   Problem
                 </span>
               </h2>
@@ -408,8 +408,8 @@ export default function About() {
               {/* Right Column: Catchy, High-Impact Biography Content */}
               <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left order-1 lg:order-2 font-onest">
                 {/* Small Section Pill */}
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-950 border border-zinc-900 text-xs tracking-wider uppercase text-orange-500 mb-6 font-medium">
-                  👤 About Me
+                <div className="inline-flex items-center font-onest gap-2 px-4 py-1.5 rounded-full bg-zinc-950 border border-zinc-900  text-lg md:text-xl tracking-wider uppercase text-orange-500 mb-6 font-medium">
+                 About Me
                 </div>
 
                 <h2 className="text-4xl md:text-5xl font-prata tracking-tight text-white mb-8">
@@ -418,10 +418,10 @@ export default function About() {
                 </h2>
 
                 {/* Optimized text: Trimmed down, formatted cleanly with subtle layout breaks */}
-                <div className="space-y-5 text-sm md:text-base text-zinc-400 font-light leading-relaxed max-w-xl">
+                <div className="space-y-5 text-sm md:text-base text-white/60 leading-relaxed max-w-xl">
                   <p>
                     Hey everyone, I’m{" "}
-                    <span className=" font-prata bg-linear-to-r from-yellow-200  via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
+                    <span className=" font-prata font-extrabold bg-linear-to-r from-yellow-200  via-orange-500 to-red-500 bg-clip-text text-transparent font-light">
                       Dev
                     </span>
                     . I engineer high-click visual structures designed
@@ -429,7 +429,7 @@ export default function About() {
                     drive real video engagement.
                   </p>
 
-                  <p className="text-zinc-500 text-xs sm:text-sm italic border-l-2 border-orange-500/40 pl-4 mt-6">
+                  <p className="text-zinc-300 text-xs sm:text-sm italic border-l-2 border-orange-500/40 pl-4 mt-6">
                     "From dynamic title alignment to color mapping, everything
                     is built strategically with conversion metrics in mind."
                   </p>
