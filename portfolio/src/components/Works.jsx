@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 // Mock data
 const allProjects = [
   { title: "Tech review", category: "Review", image: "/images/DRONE-review.png" },
-  { title: "I Investigated Island", category: "Documentary Thumbnail", image: "/images/golden-island.webp" },
+  { title: "I Investigated Island", category: "Documentary", image: "/images/golden-island.webp" },
   { title: "Explainer", category: "Mystery", image: "/images/altman.png" },
   { title: "Self Growth", category: "Growth", image: "images/olag-remake.jpeg" },
   { title: "Unique Identity", category: "Podcast", image: "images/millionare.webp" },
+  { title: "Airbnb", category: "Earning", image: "images/remake.jpg" },
   { title: "Case Study", category: "Documentary", image: "images/charles.jpg" },
   { title: "Brand Deals", category: "Branding", image: "/images/NIKE ad.webp" },
   { title: "Doomsday Secret", category: "Explainer Thumbnail", image: "/images/doomsday.webp" },
@@ -19,7 +20,6 @@ const allProjects = [
   { title: "Technical Documentary", category: "Documentary", image: "/images/elon-evolution.png" },
   // { title: "Unique Identity", category: "Branding", image: "/images/chain.png" },
   { title: "Food Review", category: "Food review", image: "/images/burger.webp" },
-  { title: "Food Review", category: "Food review", image: "images/remake.jpg" },
   { title: "Online Money", category: "Earning", image: "images/online-earning.png" },
   { title: "GTA V", category: "Gaming", image: "/images/gta-fails.webp" },
   { title: "Comparison", category: "Comparison", image: "images/remake2.png" },
@@ -141,7 +141,7 @@ export default function AllWork() {
 
               {/* Text Info */}
               {/* Removed hidden md:block so titles show beautifully on mobile layout */}
-              <div className="px-1 pb-1 flex flex-col flex-1 justify-between">
+              <div className="hidden px-1 pb-1 md:flex flex-col flex-1 justify-between">
                 <div>
                   {/* Category: Reduced text size on mobile to text-[9px] */}
                   <p className="text-zinc-500 text-[9px] sm:text-[11px] tracking-wider sm:tracking-widest uppercase mb-0.5 sm:mb-1 truncate">
