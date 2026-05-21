@@ -6,25 +6,32 @@ const allProjects = [
   { title: "Tech review", category: "Review", image: "/images/DRONE-review.png" },
   { title: "I Investigated Island", category: "Documentary Thumbnail", image: "/images/golden-island.webp" },
   { title: "Explainer", category: "Mystery", image: "/images/altman.png" },
-  { title: "Unique Identity", category: "Podcast", image: "public/images/podcast.webp" },
+  { title: "Self Growth", category: "Growth", image: "images/olag-remake.jpeg" },
+  { title: "Unique Identity", category: "Podcast", image: "images/millionare.webp" },
   { title: "Brand Deals", category: "Branding", image: "/images/NIKE ad.webp" },
   { title: "Doomsday Secret", category: "Explainer Thumbnail", image: "/images/doomsday.webp" },
   { title: "Personal Growth", category: "Growth", image: "/images/golden-product.png" },
+  { title: "Case Study", category: "Documentary", image: "images/charles.jpg" },
   { title: "AI comparison", category: "Comparison", image: "/images/ai-compare.webp" },
   { title: "Hitorical", category: "Documentary", image: "/images/Hitler-downfall-thumbnail.png" },
   { title: "Rewire Brain", category: "Self-help", image: "/images/brain.webp" },
   { title: "Technical Documentary", category: "Documentary", image: "/images/elon-evolution.png" },
   // { title: "Unique Identity", category: "Branding", image: "/images/chain.png" },
   { title: "Food Review", category: "Food review", image: "/images/burger.webp" },
-  { title: "Food Review", category: "Food review", image: "public/images/remake.webp" },
-  { title: "Online Money", category: "Earning", image: "public/images/earning-thumbnail.png" },
-  { title: "Comparison", category: "Comparison", image: "public/images/remake2.webp" },
-  { title: "Case Study", category: "Documentary", image: "public/images/Gift-Thumbnail.png" },
+  { title: "Food Review", category: "Food review", image: "images/remake.png" },
+  { title: "Online Money", category: "Earning", image: "images/online-earning.png" },
+  { title: "GTA V", category: "Gaming", image: "/images/gta-fails.webp" },
+  { title: "Comparison", category: "Comparison", image: "images/remake2.png" },
+  { title: "Case Study", category: "Documentary", image: "images/cleo-abram.png" },
+  { title: "Product Growth", category: "Growth", image: "/images/transformation.webp" },
   { title: "GTA V", category: "Gaming", image: "/images/gta-car.webp" },
-  { title: "Hiest", category: "Survival", image: "public/images/hiest-thumnail.png" },
+  { title: "Hiest", category: "Survival", image: "images/hiest-thumbnail.png" },
   { title: "Hotel compare", category: "Comparsion", image: "/images/hotel-compare.webp" },
   { title: "News", category: "Documentary", image: "/images/trump-target.png" },
+  // { title: "News", category: "Documentary", image: "/images/trump-target.png" },
   { title: "Mystery", category: "Mystery", image: "/images/control.webp" },
+  { title: "Hidden Feature", category: "Growth", image: "/images/gemini.webp" },
+  { title: "YT Growth", category: "Growth", image: "/images/thumb-importance.webp" },
   { title: "Space Thumbnail", category: "Mystery", image: "/images/saturn.webp" },
 
 
@@ -47,7 +54,7 @@ export default function AllWork() {
                Back to Home
             </Link>
             <h1 className="text-4xl pt-3 md:text-6xl font-prata tracking-tight text-white mt-1">
-              Thumbnail <span className="bg-linear-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">Archive</span>
+              Thumbnail <span className="bg-linear-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent font-light">Archive</span>
             </h1>
           </div>
           <p className="text-zinc-300 max-w-sm text-sm md:text-base leading-relaxed">
