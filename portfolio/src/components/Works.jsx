@@ -20,7 +20,11 @@ const allProjects = [
     category: "Growth",
     image: "images/olag-remake.jpeg",
   },
-  { title: "Editing", category: "Growth", image: "/images/thumbnail editing.png" },
+  {
+    title: "Editing",
+    category: "Growth",
+    image: "/images/thumbnail editing.png",
+  },
   {
     title: "Unique Identity",
     category: "Podcast",
@@ -58,7 +62,11 @@ const allProjects = [
     category: "Documentary",
     image: "/images/elon-evolution.png",
   },
-  { title: "Lifestyle", category: "Mystery", image: "/images/Secret serum.png" },
+  {
+    title: "Lifestyle",
+    category: "Mystery",
+    image: "/images/Secret serum.png",
+  },
   // { title: "Unique Identity", category: "Branding", image: "/images/chain.png" },
   {
     title: "Food Review",
@@ -106,7 +114,7 @@ export default function AllWork() {
 
   return (
     <>
-      <main className="min-h-screen bg-black text-white pt-28 pb-20 px-4 sm:px-6 md:px-12 font-onest">
+      <main className="min-h-screen bg-black text-white pt-5 pb-20 px-4 sm:px-6 md:px-12 font-onest">
         <div className="max-w-7xl mx-auto">
           {/* Header Block */}
           <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-900 pb-1 mb-5 gap-6">
@@ -129,36 +137,24 @@ export default function AllWork() {
               and digital assets engineered for creator growth.
             </p>
           </div>
-
-          {/* --- THE FIX: Optimized Responsive Grid System --- */}
-          {/* Changed gap-8 to gap-3 on mobile to prevent squishing cards */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-3 md:gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {allProjects.map((project, index) => (
               <div
                 key={index}
-                /* Changed p-4 to p-2.5 on mobile to free up space for text/images */
-                className="flex flex-col bg-zinc-950/60 border border-zinc-900 rounded-2xl sm:rounded-3xl p-2 sm:p-2 hover:border-orange-500/30 transition-all duration-500 group cursor-pointer shadow-xl"
+                className="flex flex-col bg-zinc-950/60 border border-zinc-900 rounded-2xl sm:rounded-3xl p-0 sm:p-5 hover:border-orange-500/30 transition-all duration-500 group cursor-pointer shadow-xl overflow-hidden"
               >
-                {/* Asset Box */}
-                {/* Changed mb-5 to mb-3 on mobile */}
-                <div className="w-full aspect-video bg-zinc-900/40 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-900 relative flex items-center justify-center mb-3 sm:mb-2">
+                <div className="w-full aspect-video bg-zinc-900/40 sm:rounded-2xl overflow-hidden sm:border border-zinc-900 relative flex items-center justify-center sm:mb-5">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-
-                {/* Text Info */}
-                {/* Removed hidden md:block so titles show beautifully on mobile layout */}
-                <div className="hidden px-1 pb-1 md:flex flex-col flex-1 justify-between">
+                <div className="p-3 sm:p-0 flex flex-col flex-1 justify-between">
                   <div>
-                    {/* Category: Reduced text size on mobile to text-[9px] */}
-                    <p className="text-zinc-500 text-[9px] sm:text-[11px] tracking-wider sm:tracking-widest uppercase mb-0.5 sm:mb-1 truncate">
+                    <p className="text-zinc-500 text-[9px] sm:text-[11px] tracking-wider uppercase mb-0.5 sm:mb-1 truncate">
                       {project.category}
                     </p>
-
-                    {/* Title: Fluid text sizing and multi-line clamping to prevent card breaking */}
                     <h3 className="text-xs sm:text-lg md:text-xl font-bold text-white group-hover:text-orange-500 transition-colors duration-300 line-clamp-2 leading-snug">
                       {project.title}
                     </h3>

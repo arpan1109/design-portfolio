@@ -36,7 +36,7 @@ export default function Marquee() {
   ];
 
   return (
-    <section className="bg-[#030303] py-16 overflow-hidden flex flex-col gap-4 md:gap-6">
+    <section className="bg-[#030303] py-5 overflow-hidden flex flex-col gap-4 md:gap-6">
       
       {/* ================= ROW 1: MOVING LEFT ================= */}
       <div className="relative w-full flex overflow-x-hidden pointer-events-none">

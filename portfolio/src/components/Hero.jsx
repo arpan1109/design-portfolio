@@ -5,7 +5,7 @@ export default function Hero() {
     <section
       id="home"
       /* THE FIX: Swapped min-h-screen for crisp, intentional padding heights */
-      className="relative bg-[#030303] text-white flex flex-col items-center justify-center pt-40 pb-24 overflow-hidden"
+      className="relative bg-[#030303] text-white flex flex-col items-center justify-center pt-10 pb-5 overflow-hidden"
     >
       {/* Background Ambient Radial Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-orange-500/5 blur-[150px] rounded-full pointer-events-none"></div>
