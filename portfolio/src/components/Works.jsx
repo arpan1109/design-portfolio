@@ -20,6 +20,7 @@ const allProjects = [
     category: "Growth",
     image: "images/olag-remake.jpeg",
   },
+  { title: "Editing", category: "Growth", image: "/images/thumbnail editiing.png" },
   {
     title: "Unique Identity",
     category: "Podcast",
@@ -27,18 +28,20 @@ const allProjects = [
   },
   { title: "Airbnb", category: "Earning", image: "images/remake.jpg" },
   { title: "Case Study", category: "Documentary", image: "images/charles.jpg" },
-  { title: "Brand Deals", category: "Branding", image: "/images/NIKE ad.webp" },
+  // { title: "Brand Deals", category: "Branding", image: "/images/NIKE ad.webp" },
+  { title: "Space", category: "Mystery", image: "/images/black hole.png" },
   {
     title: "Doomsday Secret",
     category: "Explainer Thumbnail",
     image: "/images/doomsday.webp",
   },
-  { title: "GTA V", category: "Gaming", image: "/images/gta-car.webp" },
+  // { title: "GTA V", category: "Gaming", image: "/images/gta-car.webp" },
   {
     title: "Personal Growth",
     category: "Growth",
     image: "/images/golden-product.png",
   },
+  { title: "Explainer", category: "Grwoth", image: "/images/charles-2.png" },
   {
     title: "AI comparison",
     category: "Comparison",
@@ -55,17 +58,18 @@ const allProjects = [
     category: "Documentary",
     image: "/images/elon-evolution.png",
   },
+  { title: "Lifestyle", category: "Mystery", image: "/images/Secret serum.png" },
   // { title: "Unique Identity", category: "Branding", image: "/images/chain.png" },
   {
     title: "Food Review",
     category: "Food review",
     image: "/images/burger.webp",
   },
-  {
-    title: "Online Money",
-    category: "Earning",
-    image: "images/online-earning.png",
-  },
+  // {
+  //   title: "Online Money",
+  //   category: "Earning",
+  //   image: "images/online-earning.png",
+  // },
   { title: "GTA V", category: "Gaming", image: "/images/gta-fails.webp" },
   { title: "Comparison", category: "Comparison", image: "images/remake2.png" },
   {
@@ -73,26 +77,21 @@ const allProjects = [
     category: "Documentary",
     image: "images/cleo-abram.png",
   },
-  {
-    title: "Product Growth",
-    category: "Growth",
-    image: "/images/transformation.webp",
-  },
+  // {
+  //   title: "Product Growth",
+  //   category: "Growth",
+  //   image: "/images/transformation.webp",
+  // },
   { title: "Hiest", category: "Survival", image: "images/hiest-thumbnail.png" },
-  {
-    title: "Hotel compare",
-    category: "Comparsion",
-    image: "/images/hotel-compare.webp",
-  },
   { title: "News", category: "Documentary", image: "/images/trump-target.png" },
   // { title: "News", category: "Documentary", image: "/images/trump-target.png" },
   { title: "Mystery", category: "Mystery", image: "/images/control.webp" },
   { title: "Hidden Feature", category: "Growth", image: "/images/gemini.webp" },
-  {
-    title: "YT Growth",
-    category: "Growth",
-    image: "/images/thumb-importance.webp",
-  },
+  // {
+  //   title: "YT Growth",
+  //   category: "Growth",
+  //   image: "/images/thumb-importance.webp",
+  // },
   {
     title: "Space Thumbnail",
     category: "Mystery",
@@ -114,7 +113,7 @@ export default function AllWork() {
             <div>
               <Link
                 to="/"
-                className="text-xs text-orange-500 uppercase tracking-widest hover:underline mb-3 inline-block"
+                className="text-xs text-orange-500 uppercase tracking-widest hover:underline rounded-3xl border-red-500 border-2 mb-3 inline-block"
               >
                 ← Back to Home
               </Link>

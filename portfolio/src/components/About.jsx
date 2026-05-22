@@ -421,7 +421,7 @@ export default function About() {
                 <div className="space-y-5 text-sm md:text-base text-white/60 leading-relaxed max-w-xl">
                   <p>
                     Hey everyone, I’m{" "}
-                    <span className=" font-prata font-extrabold bg-linear-to-r from-yellow-200  via-orange-500 to-red-500 bg-clip-text text-transparent font-light">
+                    <span className=" font-onest font-black bg-linear-to-r from-yellow-200  via-orange-500 to-red-500 bg-clip-text text-transparent">
                       Dev
                     </span>
                     . I engineer high-click visual structures designed
