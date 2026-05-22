@@ -360,11 +360,11 @@ export default function About() {
             </div>
 
             {/* 3-Column Grid for Problems */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {problems.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-zinc-950/40 border border-zinc-900/60 rounded-3xl p-8 flex items-center justify-center flex-col gap-6 group hover:border-zinc-800 transition-colors shadow-xl"
+                  className="bg-zinc-950/40 border border-zinc-900/60 rounded-3xl p-8 flex items-center justify-center flex-col gap-3 group hover:border-zinc-800 transition-colors shadow-xl"
                 >
                   <div className="w-[85%] flex items-center justify-center h-40 bg-zinc-950 border border-zinc-900/40 rounded-xl overflow-hidden relative">
                     <img

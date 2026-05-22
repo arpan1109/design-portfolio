@@ -53,11 +53,6 @@ export default function Footer() {
       answer:
         "I request a 50% deposit upfront, and the remaining 50% is due upon completion of the project.",
     },
-    {
-      question: "Do you design websites as well?",
-      answer:
-        "Yes! I build custom, high-performance web experiences using React and Tailwind CSS.",
-    },
   ];
 
   return (

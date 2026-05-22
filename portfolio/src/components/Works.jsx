@@ -132,7 +132,7 @@ export default function AllWork() {
 
           {/* --- THE FIX: Optimized Responsive Grid System --- */}
           {/* Changed gap-8 to gap-3 on mobile to prevent squishing cards */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-3 md:gap-8">
             {allProjects.map((project, index) => (
               <div
                 key={index}
@@ -141,7 +141,7 @@ export default function AllWork() {
               >
                 {/* Asset Box */}
                 {/* Changed mb-5 to mb-3 on mobile */}
-                <div className="w-full aspect-video bg-zinc-900/40 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-900 relative flex items-center justify-center mb-3 sm:mb-5">
+                <div className="w-full aspect-video bg-zinc-900/40 rounded-xl sm:rounded-2xl overflow-hidden border border-zinc-900 relative flex items-center justify-center mb-3 sm:mb-2">
                   <img
                     src={project.image}
                     alt={project.title}
