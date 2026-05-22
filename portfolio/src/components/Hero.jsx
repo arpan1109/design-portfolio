@@ -24,7 +24,7 @@ export default function Hero() {
         </h1>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-prata tracking-tight leading-[1.1] mb-8">
           Instant{" "}
-          <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
+          <span className="bg-gradient-to-r from-amber-200 via-orange-500 to-red-500 bg-clip-text text-transparent italic font-light">
             Clicks.
           </span>
         </h1>
@@ -41,7 +41,7 @@ export default function Hero() {
           {/* Primary Button */}
           <a
             href="#contact"
-            className="w-full sm:w-auto bg-orange-500 text-black font-semibold px-8 py-4 rounded-full hover:bg-orange-600 transition-all duration-300 text-center cursor-pointer shadow-lg shadow-orange-500/10"
+            className="w-full sm:w-auto bg-orange-400/70 font-extrabold text-black  px-8 py-4 rounded-full hover:bg-orange-600 transition-all duration-300 text-center cursor-pointer shadow-lg shadow-orange-500/10"
           >
             Get Started
           </a>
@@ -49,7 +49,7 @@ export default function Hero() {
           {/* Secondary Button */}
           <a
             href="/works"
-            className="w-full sm:w-auto bg-zinc-950 border border-zinc-900 text-orange-500 font-medium px-8 py-4 rounded-full hover:bg-orange-500 hover:text-black hover:border-orange-500 transition-all duration-300 text-center cursor-pointer"
+            className="w-full sm:w-auto bg-zinc-950 border border-zinc-900 text-orange-500 font-medium px-8 py-4 rounded-full hover:bg-zinc-700/60 hover:text-ornag-400 hover:border-orange-500 transition-all duration-300 text-center cursor-pointer"
           >
             View Portfolio
           </a>

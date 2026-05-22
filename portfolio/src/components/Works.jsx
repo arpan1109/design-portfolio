@@ -20,7 +20,7 @@ const allProjects = [
     category: "Growth",
     image: "images/olag-remake.jpeg",
   },
-  { title: "Editing", category: "Growth", image: "/images/thumbnail editiing.png" },
+  { title: "Editing", category: "Growth", image: "/images/thumbnail editing.png" },
   {
     title: "Unique Identity",
     category: "Podcast",
@@ -109,11 +109,11 @@ export default function AllWork() {
       <main className="min-h-screen bg-black text-white pt-28 pb-20 px-4 sm:px-6 md:px-12 font-onest">
         <div className="max-w-7xl mx-auto">
           {/* Header Block */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-900 pb-8 mb-12 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-900 pb-1 mb-5 gap-6">
             <div>
               <Link
                 to="/"
-                className="text-xs text-orange-500 uppercase tracking-widest hover:underline rounded-3xl border-red-500 border-2 mb-3 inline-block"
+                className="text-xs text-orange-500  p-2 uppercase tracking-widest hover:underline rounded-3xl border-red-500 border-2 mb-3 inline-block"
               >
                 ← Back to Home
               </Link>
@@ -137,7 +137,7 @@ export default function AllWork() {
               <div
                 key={index}
                 /* Changed p-4 to p-2.5 on mobile to free up space for text/images */
-                className="flex flex-col bg-zinc-950/60 border border-zinc-900 rounded-2xl sm:rounded-3xl p-2.5 sm:p-5 hover:border-orange-500/30 transition-all duration-500 group cursor-pointer shadow-xl"
+                className="flex flex-col bg-zinc-950/60 border border-zinc-900 rounded-2xl sm:rounded-3xl p-2 sm:p-2 hover:border-orange-500/30 transition-all duration-500 group cursor-pointer shadow-xl"
               >
                 {/* Asset Box */}
                 {/* Changed mb-5 to mb-3 on mobile */}

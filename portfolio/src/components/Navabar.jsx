@@ -15,8 +15,8 @@
 //   return (
 //     <>
 //       <nav
-//         className="fixed top-0 w-full z-50 flex justify-between items-center py-6 px-6 md:px-12 
-//         bg-black/80 backdrop-blur-md border-b border-zinc-900 
+//         className="fixed top-0 w-full z-50 flex justify-between items-center py-6 px-6 md:px-12
+//         bg-black/80 backdrop-blur-md border-b border-zinc-900
 //         shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
 //       >
 //         {/* Logo */}
@@ -58,9 +58,9 @@
 //           <a href="#home" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Home</a>
 //           <a href="#about" onClick={closeMenu} className="hover:text-orange-500 transition-colors">About</a>
 //           <a href="#work" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Services</a>
-//           <a 
-//             href="#contact" 
-//             onClick={closeMenu} 
+//           <a
+//             href="#contact"
+//             onClick={closeMenu}
 //             className="text-orange-500 border border-orange-500/40 hover:bg-orange-500 hover:text-black transition-all px-8 py-3 rounded-full"
 //           >
 //             Contact
@@ -96,14 +96,20 @@ export default function Navbar() {
     // If we are already on the homepage, use standard hash scrolling anchors
     if (location.pathname === "/") {
       return (
-        <a href={`#${id}`} className="hover:text-orange-500 transition-colors cursor-pointer uppercase">
+        <a
+          href={`#${id}`}
+          className="hover:text-orange-500 transition-colors cursor-pointer uppercase"
+        >
           {label}
         </a>
       );
     }
     // If we are on an external page (like /works), route back to homepage with the hash attached
     return (
-      <Link to={`/#${id}`} className="hover:text-orange-500 transition-colors cursor-pointer uppercase">
+      <Link
+        to={`/#${id}`}
+        className="hover:text-orange-500 transition-colors cursor-pointer uppercase"
+      >
         {label}
       </Link>
     );
@@ -117,7 +123,10 @@ export default function Navbar() {
         shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
       >
         {/* Logo - Wrap in Link so clicking it always takes you to the absolute root home page */}
-        <Link to="/" className="text-sm lg:text-2xl text-white font-prata tracking-wide uppercase cursor-pointer">
+        <Link
+          to="/"
+          className="text-sm lg:text-2xl text-white font-prata tracking-wide uppercase cursor-pointer"
+        >
           Dev <span className="text-orange-500">creates</span>
         </Link>
 
@@ -126,7 +135,7 @@ export default function Navbar() {
           {renderNavLink("home", "Home")}
           {renderNavLink("about", "About")}
           {renderNavLink("services", "Services")}
-          
+
           {/* Contact Pill handles its own conditional routing logic */}
           {location.pathname === "/" ? (
             <a
@@ -156,20 +165,71 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {menuopen && (
-        <div className="md:hidden fixed inset-0 top-[76px] bg-black/95 backdrop-blur-md text-white flex flex-col items-center justify-center gap-10 tracking-[0.3em] uppercase text-lg z-40 animate-fadeIn">
+        <div className="md:hidden fixed inset-0 top-19 bg-black/95 backdrop-blur-md text-white flex flex-col items-center justify-center gap-6 tracking-[0.3em] uppercase text-lg z-40 animate-fadeIn delay-75 ease-in">
           {location.pathname === "/" ? (
             <>
-              <a href="#home" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Home</a>
-              <a href="#about" onClick={closeMenu} className="hover:text-orange-500 transition-colors">About</a>
-              <a href="#services" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Services</a>
-              <a href="#contact" onClick={closeMenu} className="text-orange-500 border border-orange-500/40 hover:bg-orange-500 hover:text-black transition-all px-8 py-3 rounded-full">Contact</a>
+              <a
+                href="#home"
+                onClick={closeMenu}
+                className="hover:text-orange-500 transition-colors"
+              >
+                Home
+              </a>
+              <a
+                href="#about"
+                onClick={closeMenu}
+                className="hover:text-orange-500 transition-colors"
+              >
+                About
+              </a>
+
+              {/* THE FIX: Changed from <a> to <Link> to stop the hard page refresh */}
+              <Link
+                to="/works"
+                onClick={closeMenu}
+                className="hover:text-orange-500 transition-colors"
+              >
+                Services
+              </Link>
+
+              <a
+                href="#contact"
+                onClick={closeMenu}
+                className="text-orange-500 border border-orange-500/40 hover:bg-orange-500 hover:text-black transition-all px-8 py-3 rounded-full"
+              >
+                Contact
+              </a>
             </>
           ) : (
             <>
-              <Link to="/#home" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Home</Link>
-              <Link to="/#about" onClick={closeMenu} className="hover:text-orange-500 transition-colors">About</Link>
-              <Link to="/#services" onClick={closeMenu} className="hover:text-orange-500 transition-colors">Services</Link>
-              <Link to="/#contact" onClick={closeMenu} className="text-orange-500 border border-orange-500/40 hover:bg-orange-500 hover:text-black transition-all px-8 py-3 rounded-full">Contact</Link>
+              <Link
+                to="/#home"
+                onClick={closeMenu}
+                className="hover:text-orange-500 transition-colors"
+              >
+                Home
+              </Link>
+              <Link
+                to="/#about"
+                onClick={closeMenu}
+                className="hover:text-orange-500 transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                to="/works"
+                onClick={closeMenu}
+                className="hover:text-orange-500 transition-colors"
+              >
+                Services
+              </Link>
+              <Link
+                to="/#contact"
+                onClick={closeMenu}
+                className="text-orange-500 border border-orange-500/40 hover:bg-orange-500 hover:text-black transition-all px-8 py-3 rounded-full"
+              >
+                Contact
+              </Link>
             </>
           )}
         </div>
